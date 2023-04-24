@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "./components/Hero";
 import Introduction from "./components/Introduction";
 
+import css from "./Home.module.scss";
+
 const LazyCatalogue =
   import.meta.env.MODE === "standalone"
     ? () => null
@@ -13,7 +15,7 @@ const LazyPosts =
 
 const Home = () => {
   return (
-    <>
+    <div className={css.home}>
       <Hero />
 
       <Introduction />
@@ -31,7 +33,7 @@ const Home = () => {
           <LazyPosts nPosts={5} />
         </>
       )}
-    </>
+    </div>
   );
 };
 

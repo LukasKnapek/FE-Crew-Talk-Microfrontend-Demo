@@ -1,0 +1,52 @@
+.articleList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.articleListItems {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.articleItem {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.articleImageContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.articleImage {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.articleContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.articleTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.articleBody {
+  font-size: 1rem;
+}

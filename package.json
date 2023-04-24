@@ -1,0 +1,34 @@
+{
+  "name": "FE-Crew-Talk-Microfrontend-Demo",
+  "packageManager": "yarn@3.5.0",
+  "scripts": {
+    "dev:shell": "yarn workspace @apps/shell dev --mode standalone",
+    "dev:catalogue": "yarn workspace @apps/catalogue dev",
+    "dev:home": "yarn workspace @apps/home dev",
+    "dev:posts": "yarn workspace @apps/posts dev",
+    "build:shell": "yarn workspace @apps/shell build",
+    "build:catalogue": "yarn workspace @apps/catalogue build",
+    "serve:catalogue": "yarn workspace @apps/catalogue serve",
+    "serve:posts": "yarn workspace @apps/posts serve",
+    "serve:home": "yarn workspace @apps/home serve",
+    "serve:all": "yarn workspaces foreach -pi run serve"
+  },
+  "workspaces": [
+    "@apps/*"
+  ],
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.2.2",
+    "@types/react": "^18.0.38",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "sass": "^1.62.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.0",
+    "vite-plugin-top-level-await": "^1.3.0"
+  }
+}

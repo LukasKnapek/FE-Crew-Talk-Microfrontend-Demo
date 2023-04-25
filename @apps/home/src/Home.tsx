@@ -28,7 +28,7 @@ const Home = () => {
         <>
           <div className={css.title}>
             <h2>Latest products</h2>
-            <a onClick={() => navigate("/catalogue")}>
+            <a className={css.link} onClick={() => navigate("/catalogue")}>
               <h3>{"See all products >>>"}</h3>
             </a>
           </div>
@@ -41,7 +41,7 @@ const Home = () => {
         <>
           <div className={css.title}>
             <h2>Latest blog posts</h2>
-            <a onClick={() => navigate("/posts")}>
+            <a className={css.link} onClick={() => navigate("/posts")}>
               <h3>{"See all posts >>>"}</h3>
             </a>
           </div>

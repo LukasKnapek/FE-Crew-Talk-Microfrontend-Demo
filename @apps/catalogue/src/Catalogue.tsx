@@ -1,7 +1,7 @@
 import css from "./Catalogue.module.scss";
 
 interface Props {
-  nImages: number;
+  nImages?: number;
 }
 
 const Catalogue = ({ nImages = 30 }: Props) => {

@@ -12,6 +12,7 @@
     "serve:posts": "yarn workspace @apps/posts serve",
     "serve:home": "yarn workspace @apps/home serve",
     "serve:all": "yarn workspaces foreach -pi run serve",
+    "dev:all": "yarn workspaces foreach -pi run dev --mode standalone",
     "serve:allMfe": "VITE_MFE_DEBUG=true yarn workspaces foreach -pi run serve"
   },
   "workspaces": [

@@ -1,7 +1,7 @@
 const useMfeNavigate = () => {
   const navigate = (path: string) => {
     const event = new CustomEvent("mfe__navigate", {
-      detail: { path: "/catalogue" },
+      detail: { path },
     });
     window.dispatchEvent(event);
   };

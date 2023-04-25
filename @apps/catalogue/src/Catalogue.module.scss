@@ -4,7 +4,9 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
+}
 
+.imageGrid_mfe {
   border: 10px solid green;
 }
 

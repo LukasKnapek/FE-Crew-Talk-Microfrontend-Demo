@@ -39,7 +39,11 @@ const Posts = ({ nPosts = 30 }: Props) => {
   }, []);
 
   return (
-    <div className={styles.articleList}>
+    <div
+      className={`${styles.articleList} ${
+        import.meta.env.VITE_MFE_DEBUG && styles.articleList_mfe
+      }`}
+    >
       <ul className={styles.articleListItems}>
         {articles.map((article) => (
           <li key={article.id} className={styles.articleItem}>

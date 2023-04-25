@@ -11,7 +11,8 @@
     "serve:catalogue": "yarn workspace @apps/catalogue serve",
     "serve:posts": "yarn workspace @apps/posts serve",
     "serve:home": "yarn workspace @apps/home serve",
-    "serve:all": "yarn workspaces foreach -pi run serve"
+    "serve:all": "yarn workspaces foreach -pi run serve",
+    "serve:allMfe": "VITE_MFE_DEBUG=true yarn workspaces foreach -pi run serve"
   },
   "workspaces": [
     "@apps/*"
@@ -30,5 +31,8 @@
     "typescript": "^5.0.2",
     "vite": "^4.3.0",
     "vite-plugin-top-level-await": "^1.3.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.10.0"
   }
 }
